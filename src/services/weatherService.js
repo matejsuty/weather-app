@@ -1,5 +1,9 @@
 import { DateTime } from "luxon";
-const API_KEY = "dd0d116e0be8ab0abfe02eb794fc54de";
+import * as dotenv from "dotenv"
+dotenv.config()
+
+// eslint-disable-next-line no-undef
+const API_KEY = process.env.API_KEY;
 const BASE_URL = "https://api.openweathermap.org/data/2.5"
 
 const getWeatherData = (infoType, searchParams) => {
