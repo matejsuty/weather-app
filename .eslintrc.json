@@ -19,9 +19,10 @@
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
-        "camelcase": "error",
         "spaced-comment": "error",
         "quotes": ["error", "double"],
-        "no-duplicate-imports": "error"
+        "no-duplicate-imports": "error",
+        "no-unused-vars": "off",
+        "react/prop-types": "off"
     }
 }
